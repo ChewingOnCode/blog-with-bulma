@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma CSS serviced by CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.css"
+        integrity="sha512-2UlItOJI2xOc8T1IjOJNrutOsPuVPR+x4lILJ+X9ouT0FYu7oY+f7y0NGWO1LRwmu02ZwZksvq83tIk8baHu3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawesome serviced by CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .is-paddingless-horizontal {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+        }
+
+        .grid * {
+            grid-column: md;
+        }
+
+        .grid-xl {
+            grid-column: xl;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="section is-paddingless-horizontal">
+        <div class="container grid">
+            <nav class="breadcrumb has-arrow-separator grid-xl" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</body>
+
+</html>
